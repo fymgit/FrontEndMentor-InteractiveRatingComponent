@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+}
+
+.container {
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Grey);
+
+    width: 400px;
+    border-radius: 18px;
+    padding: 36px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .star-logo {
+    width: 46px;
+    height: 46px;
+    /* border: 1px solid green; */
+    text-align: center;
+    padding-top: 15px;
+    background-color: hsl(214, 17%, 24%);
+    border-radius: 50%;
+    margin-bottom: 36px;
+}
+.container h1 {
+    color: var(--White);
+    margin-bottom: 20px;
+    /* border: 1px solid orange; */
+}
+.container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+.num {
+    background-color: hsl(214, 17%, 24%);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    color: var(--Light-Grey);
+    text-align: center;
+    padding-top: 17px;
+    cursor: pointer;
+}
+.num:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+button {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 20px;
+    color: var(--White);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background-color: var(--Orange);
+    margin: 28px auto 2px auto;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.active {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+/* response style */
+.response {
+    text-align: center;
+}
+.rating {
+    background-color: hsl(214, 17%, 24%);
+    color: var(--Orange);
+    
+    width: fit-content;
+    padding-top: 4px;
+    padding-inline: 20px;
+    margin: 26px auto;
+    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.responseTitle {
+    color: var(--White);
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+.container .responseText {
+    text-align: center;
+    margin-bottom: 12px;
+}
